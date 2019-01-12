@@ -17,13 +17,33 @@ public class PokerModelImplTest {
   public void shuffle() {
   }
 
-  //Tests that incorrect starting parameters are caught
+  //small blind is negative
   @Test(expected = IllegalArgumentException.class)
   public void badBuild() {
     negSmall = new PokerModelImpl(-1, 3, 4, 0);
+  }
+
+  //big blind is negative
+  @Test(expected = IllegalArgumentException.class)
+  public void badBuild2() {
     negBig = new PokerModelImpl(1, -3, 0, 5);
+  }
+
+  //ante is negative
+  @Test(expected = IllegalArgumentException.class)
+  public void badBuild3() {
     negAnte = new PokerModelImpl(1, 4, -1, 15);
+  }
+
+  //Big blind less than small blind
+  @Test(expected = IllegalArgumentException.class)
+  public void badBuild4() {
     BBlessSB = new PokerModelImpl(2, 1, 0, 100);
+  }
+
+  //Starting stack less than big blind
+  @Test(expected = IllegalArgumentException.class)
+  public void badBuild5() {
     SSlessBB = new PokerModelImpl(5, 10, 0, 8);
   }
 
