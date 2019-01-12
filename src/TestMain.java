@@ -7,8 +7,8 @@ public class TestMain {
 
     IPokerModel pokerModel = new PokerModelImpl();
 
-    System.out.print(pokerModel.shuffle() + "\n");
-    System.out.print(pokerModel.shuffle());
+    System.out.print(pokerModel.shuffle().toString() + "\n");
+    System.out.print(pokerModel.shuffle().toString());
   }
 
 

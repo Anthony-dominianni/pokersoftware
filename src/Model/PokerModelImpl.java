@@ -6,6 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import Cards.Card;
 import Player.Player;
 
+// A class to represent a Texas Holdem Model
 public class PokerModelImpl implements IPokerModel {
 
   private int smallBlind;
@@ -32,12 +33,19 @@ public class PokerModelImpl implements IPokerModel {
   }
 
   //Custom PokerModel
-  //Takes a small blind, big blind, ante, and startingstack for all players
+  //Takes a small blind, big blind, ante, and starting stack for all players
   public PokerModelImpl(int smallBlind, int bigBlind, int ante, int startingStack) {
-    this.smallBlind = smallBlind;
-    this.bigBlind = bigBlind;
-    this.ante = ante;
-    this.startingStack = startingStack;
+
+    if (ensureBlinds(smallBlind, bigBlind, ante, startingStack)) {
+      this.smallBlind = smallBlind;
+      this.bigBlind = bigBlind;
+      this.ante = ante;
+      this.startingStack = startingStack;
+    } else {
+      throw new IllegalArgumentException("Invalid values for blinds or ante. " +
+              "SB and BB must be > 0, BB must be > SB, ANTE must be >= 0, " +
+              "and Starting stack must be > BB);");
+    }
   }
 
   @Override
@@ -57,6 +65,7 @@ public class PokerModelImpl implements IPokerModel {
 
       deckOfCards.add(index, randomList.get(randomNum));
       randomList.remove(randomNum);
+      index++;
     }
 
     return deckOfCards;
@@ -66,6 +75,11 @@ public class PokerModelImpl implements IPokerModel {
   @Override
   public void initGame(int players) {
 
+  }
+
+  @Override
+  public String printgameState() {
+    return null;
   }
 
   @Override
@@ -96,5 +110,13 @@ public class PokerModelImpl implements IPokerModel {
   @Override
   public void determineWinner() {
 
+  }
+
+  private static boolean ensureBlinds(int smallBlind, int bigBlind, int ante, int startingStack) {
+    return smallBlind > 0 &&
+            bigBlind > 0 &&
+            ante >= 0 &&
+            bigBlind > smallBlind &&
+            startingStack > bigBlind;
   }
 }
