@@ -1,20 +1,30 @@
 package Model;
 
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.Random;
+
 import static org.junit.Assert.assertEquals;
 
 public class PokerModelImplTest {
 
+  Random rand = new Random(42);
+
   IPokerModel model1 = new PokerModelImpl();
   IPokerModel model2 = new PokerModelImpl(1, 2, 0, 400);
+
+  //Models for illegal argument catching
   IPokerModel negSmall;
   IPokerModel negBig;
   IPokerModel negAnte;
   IPokerModel BBlessSB;
   IPokerModel SSlessBB;
 
+  //Tests the shuffle method
   @Test
   public void shuffle() {
+
   }
 
   //small blind is negative

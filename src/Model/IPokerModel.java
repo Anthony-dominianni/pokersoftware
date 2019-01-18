@@ -1,23 +1,22 @@
 package Model;
 
+import Player.Player;
 import java.util.ArrayList;
+import java.util.Random;
 
 public interface IPokerModel {
-
-  //shuffles the deck by creating a randomly sequenced array of 52 integers
-  ArrayList<Integer> shuffle();
-
-  //Initializes a game
-  void initGame(int players);
 
   //prints the current state of the game
   String printgameState();
 
-  //plays a round
-  void playRound();
+  //initializes the table of players to full stacks
+  ArrayList<Player> initPlayers();
+
+  //update the deck
+  void Shuffle();
 
   //deals pre flop hand
-  void dealPreFlop();
+  void dealHand();
 
   //deals the Flop
   void dealFlop();

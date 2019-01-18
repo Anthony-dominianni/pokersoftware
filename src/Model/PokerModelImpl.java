@@ -1,9 +1,9 @@
 package Model;
 
 import java.util.ArrayList;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.Random;
 
-import Cards.Card;
+import Utils.Utils;
 import Player.Player;
 
 // A class to represent a Texas Holdem Model
@@ -16,7 +16,7 @@ public class PokerModelImpl implements IPokerModel {
   private int pot;
   private int currentBet;
   private int numPlayers;
-  private ArrayList<Card> deck;
+  private ArrayList<Integer> deck;
   private ArrayList<Player> players;
 
   //default constructor
@@ -28,8 +28,8 @@ public class PokerModelImpl implements IPokerModel {
     this.pot = 0;
     this.currentBet = 0;
     this.numPlayers = 8;
-    this.deck = new ArrayList<Card>(52);
-    this.players = new ArrayList<Player>(numPlayers);
+    //this.deck =
+    //this.players = this.initPlayers();
   }
 
   //Custom PokerModel
@@ -49,46 +49,35 @@ public class PokerModelImpl implements IPokerModel {
   }
 
   @Override
-  public ArrayList<Integer> shuffle() {
-
-    ArrayList<Integer> randomList = new ArrayList<>(52);
-    for (int i = 1; i < 53; i++) {
-      randomList.add(i);
-    }
-
-    ArrayList<Integer> deckOfCards = new ArrayList<>(52);
-
-    int index = 0;
-
-    while (randomList.size() > 0) {
-      int randomNum = ThreadLocalRandom.current().nextInt(0, randomList.size());
-
-      deckOfCards.add(index, randomList.get(randomNum));
-      randomList.remove(randomNum);
-      index++;
-    }
-
-    return deckOfCards;
-
-  }
-
-  @Override
-  public void initGame(int players) {
-
-  }
-
-  @Override
   public String printgameState() {
     return null;
   }
 
   @Override
-  public void playRound() {
+  public ArrayList<Player> initPlayers() {
 
+    ArrayList<Player> result = new ArrayList<Player>(numPlayers);
+
+    for (int i = 0; i < numPlayers; i++) {
+
+      String name = "Player " + Integer.toString(i);
+
+      Player p = new Player(name, startingStack);
+      result.add(i, p);
+    }
+
+    return result;
   }
 
   @Override
-  public void dealPreFlop() {
+  public void Shuffle() {
+    this.deck = new Utils().shuffle(new Random());
+  }
+
+
+  @Override
+  public void dealHand() {
+
 
   }
 
@@ -111,6 +100,7 @@ public class PokerModelImpl implements IPokerModel {
   public void determineWinner() {
 
   }
+
 
   private static boolean ensureBlinds(int smallBlind, int bigBlind, int ante, int startingStack) {
     return smallBlind > 0 &&
