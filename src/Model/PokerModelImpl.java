@@ -1,6 +1,7 @@
 package Model;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Random;
 
 import Utils.Utils;
@@ -17,7 +18,7 @@ public class PokerModelImpl implements IPokerModel {
   private int currentBet;
   private int numPlayers;
   private ArrayList<Integer> deck;
-  private ArrayList<Player> players;
+  private ArrayList<Player> players; //
 
   //default constructor
   public PokerModelImpl() {
@@ -50,7 +51,14 @@ public class PokerModelImpl implements IPokerModel {
 
   @Override
   public String printgameState() {
-    return null;
+
+    StringBuilder sb = new StringBuilder();
+
+    for (Player p : players) {
+      sb.append(p.printState());
+    }
+
+    return sb.toString();
   }
 
   @Override
@@ -78,6 +86,11 @@ public class PokerModelImpl implements IPokerModel {
   @Override
   public void dealHand() {
 
+    int count = 0;
+
+    for (Player p : players) {
+      p.receiveCards(deck.get(count), deck.get(count+numPlayers));
+    }
 
   }
 

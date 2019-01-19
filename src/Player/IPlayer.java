@@ -10,5 +10,8 @@ public interface IPlayer {
 
   void check();
 
+  //prints the players hand
+  String printState();
+
 
 }

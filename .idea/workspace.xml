@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d98eac6-0544-4a26-9b3b-5fab055c7a1e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokerSoftware/Model/IPokerModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokerSoftware/Model/IPokerModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokerSoftware/Model/PokerModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokerSoftware/Model/PokerModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokerSoftware/TestMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/PokerSoftware/Model/PokerModelImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/PokerSoftware/Model/PokerModelImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/IPokerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/IPokerModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/PokerModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PokerModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Model/PokerModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Model/PokerModelImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/IPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +20,8 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="519">
+              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -35,8 +29,8 @@
       <file leaf-file-name="IPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player/IPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="195">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -65,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PokerModelImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PokerModelImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/PokerModelImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="330">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2039#2047#0" expanded="true" />
@@ -80,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PokerModelImplTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PokerModelImplTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Model/PokerModelImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,17 +143,19 @@
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/Cards/Ranks.java" />
         <option value="$PROJECT_DIR$/src/Cards/Suits.java" />
-        <option value="$PROJECT_DIR$/src/Player/IPlayer.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Cards/Suit.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rank.java" />
         <option value="$PROJECT_DIR$/src/Cards/Card.java" />
-        <option value="$PROJECT_DIR$/src/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/TestMain.java" />
         <option value="$PROJECT_DIR$/test/Model/PokerModelImplTest.java" />
         <option value="$PROJECT_DIR$/src/Utils.java" />
         <option value="$PROJECT_DIR$/src/Model/IPokerModel.java" />
         <option value="$PROJECT_DIR$/src/Utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/Utils/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/Utils/Table.java" />
+        <option value="$PROJECT_DIR$/src/Player/IPlayer.java" />
+        <option value="$PROJECT_DIR$/src/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/Model/PokerModelImpl.java" />
       </list>
     </option>
@@ -204,6 +200,12 @@
               <item name="PokerSoftware" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokerSoftware" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokerSoftware" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PokerSoftware" type="b2602c69:ProjectViewProjectNode" />
@@ -566,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Suit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -593,30 +588,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player/IPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/Utils/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Model/PokerModelImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/IPokerModel.java">
+    <entry file="file://$PROJECT_DIR$/src/Utils/Table.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -630,15 +608,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player/IPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/IPokerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/PokerModelImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="330">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2039#2047#0" expanded="true" />
             <element signature="e#1769#1770#0" expanded="true" />
             <element signature="e#1797#1798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Model/PokerModelImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
